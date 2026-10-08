@@ -113,16 +113,16 @@
 graph TD
     A([Начало]) --> B[/Ввести: x, a, b, c, d/]
     B --> C[count = 0]
-    C --> D{a <= x}
+    C --> D{a ≤ x}
     D -- Нет --> Z[/Вывод: count/]
     D -- Да --> E[count = count + 1]
-    E --> F{b <= x}
+    E --> F{b ≤ x}
     F -- Нет --> Z
     F -- Да --> G[count = count + 1]
-    G --> H{c <= x}
+    G --> H{c ≤ x}
     H -- Нет --> Z
     H -- Да --> I[count = count + 1]
-    I --> J{d <= x}
+    I --> J{d ≤ x}
     J -- Нет --> Z
     J -- Да --> K[count = count + 1]
     K --> Z
